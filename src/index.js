@@ -25,13 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             })
             .catch(err => console.error("Error loading characters:", err));
-    }
-
-    // Display Character Details
-    function displayCharacterDetails(character) {
-        detailedName.textContent = character.name;
-        detailedImage.src = character.image;
-        voteCount.textContent = character.votes;
 
         // Voting functionality
         votesForm.onsubmit = (e) => {
